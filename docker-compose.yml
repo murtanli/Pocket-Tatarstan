@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+
+  website:
+    build:
+      context: ./Pocket_Tatarstan
+    command: python /usr/src/Pocket_Tatarstan/manage.py runserver 0.0.0.0:8100
+    volumes:
+      - ./Pocket_Tatarstan:/usr/src/Pocket_Tatarstan
+    ports:
+      - 8100:8100
+    depends_on:
+      - pocket_tatarstan_db
+
+  pocket_tatarstan_db:
+      image: postgres
+      environment:
+        - POSTGRES_DB=pocket_tatarstan_app
+        - POSTGRES_USER=admindb
+        - POSTGRES_PASSWORD=12345678
+      container_name: pocket_tatarstan_db
+      volumes:
+        - pgdbdata:/var/lib/postgresql/data/
+volumes:
+  pgdbdata:
