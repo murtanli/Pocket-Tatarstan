@@ -1,3 +1,58 @@
-.image_game{
-    
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
+.play_space {
+    width: 100%;
+    height: 80vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.play_space img.image_game {
+    width: 80vh;
+    height: 80vh;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    /* Запрет выделения текста/изображения */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* Запрет перетаскивания изображения */
+    -webkit-user-drag: none;  /* Chrome/Safari */
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+ 
+
+.part {
+    position: absolute;
+    cursor: grab;
+    /*border: 1px solid black;*/
+    background-size: cover; /* растягиваем под реальный размер div */
+    background-repeat: no-repeat;
+    z-index: 10;
+    /* Запрет выделения текста/изображения */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    /* Запрет перетаскивания изображения */
+    -webkit-user-drag: none;  /* Chrome/Safari */
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+

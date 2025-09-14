@@ -1,0 +1,113 @@
+.levels {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80vw;
+    height: 70vh;
+    font-family: undertale;
+
+    position: relative;   /* чтобы кнопки могли позиционироваться внутри */
+    overflow: hidden;     /* скрываем соседние блоки */
+}
+
+.level_list {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../asset/block_back.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 50vw;
+
+    padding: 0;
+
+    flex: 0 0 100%;  /* каждый блок занимает всю ширину контейнера */
+    box-sizing: border-box;
+}
+.label_levels {
+    position: relative;
+    font-family: undertale;
+    font-size: 2.5vw;
+    margin: 2vh 0 0 2vw;
+}
+
+.level {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.level_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 7vh 0 0 2vw;
+    width: 10vw;
+    height: 24vh;
+    text-decoration: none;
+    color: #000000;
+}
+.level_btn_label {
+    position: relative;
+    font-family: undertale;
+    font-size: 1.5vw;
+    margin: 0;
+}
+.level_btn>img {
+    position: relative;
+    width: 10vw;
+    height: 20vh;
+}
+.progress_bar {
+    position: relative;
+    color: transparent;
+    border: solid #000000 6px;
+    width: 7vw;
+    height: 1vh;
+    margin: -1.2vh 0 0 2vw;
+    background-color: #0AFF22;
+}
+
+.mini_nav_bar a:active {
+  transform: scale(0.9);
+}
+
+.mini_nav_bar a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.mini_nav_bar {
+    position: absolute;
+    top: 50%;
+    left: 60vw;
+
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* сама панель клика не ловит */
+}
+
+.mini_nav_bar a {
+    pointer-events: auto; /* но кнопки остаются кликабельными */
+}
+.prev {
+    position: relative;
+    margin: 0 2vw 0 0;
+}
+
+
+
+.slider_track {
+  display: flex;
+    transition: transform 0.5s ease; /* плавное перелистывание */
+
+}
+

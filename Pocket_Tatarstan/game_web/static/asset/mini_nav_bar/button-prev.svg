@@ -1,0 +1,47 @@
+<svg width="143" height="143" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="87" y1="139" x2="56" y2="139" stroke="black" stroke-width="8"/>
+<line x1="87" y1="4" x2="56" y2="4" stroke="black" stroke-width="8"/>
+<line x1="139" y1="87" x2="139" y2="56" stroke="black" stroke-width="8"/>
+<line x1="87" y1="131" x2="103" y2="131" stroke="black" stroke-width="8"/>
+<line x1="131" y1="103" x2="131" y2="87" stroke="black" stroke-width="8"/>
+<line x1="103" y1="123" x2="111" y2="123" stroke="black" stroke-width="8"/>
+<line x1="111" y1="115" x2="119" y2="115" stroke="black" stroke-width="8"/>
+<line x1="119" y1="107" x2="127" y2="107" stroke="black" stroke-width="8"/>
+<line x1="131" y1="56" x2="131" y2="40" stroke="black" stroke-width="8"/>
+<line x1="103" y1="12" x2="87" y2="12" stroke="black" stroke-width="8"/>
+<line x1="123" y1="40" x2="123" y2="32" stroke="black" stroke-width="8"/>
+<line x1="115" y1="32" x2="115" y2="24" stroke="black" stroke-width="8"/>
+<line x1="107" y1="24" x2="107" y2="16" stroke="black" stroke-width="8"/>
+<line x1="4" y1="56" x2="4" y2="87" stroke="black" stroke-width="8"/>
+<line x1="56" y1="12" x2="40" y2="12" stroke="black" stroke-width="8"/>
+<line x1="12" y1="40" x2="12" y2="56" stroke="black" stroke-width="8"/>
+<line x1="40" y1="20" x2="32" y2="20" stroke="black" stroke-width="8"/>
+<line x1="32" y1="28" x2="24" y2="28" stroke="black" stroke-width="8"/>
+<line x1="24" y1="36" x2="16" y2="36" stroke="black" stroke-width="8"/>
+<line x1="12" y1="87" x2="12" y2="103" stroke="black" stroke-width="8"/>
+<line x1="40" y1="131" x2="56" y2="131" stroke="black" stroke-width="8"/>
+<line x1="20" y1="103" x2="20" y2="111" stroke="black" stroke-width="8"/>
+<line x1="28" y1="111" x2="28" y2="119" stroke="black" stroke-width="8"/>
+<line x1="36" y1="119" x2="36" y2="127" stroke="black" stroke-width="8"/>
+<rect x="56" y="8" width="31" height="127" fill="white"/>
+<rect x="56" y="8" width="31" height="127" fill="white"/>
+<rect x="135" y="56" width="31" height="127" transform="rotate(90 135 56)" fill="white"/>
+<rect x="135" y="56" width="31" height="127" transform="rotate(90 135 56)" fill="white"/>
+<rect x="87" y="16" width="16" height="40" fill="white"/>
+<rect x="103" y="40" width="24" height="16" fill="white"/>
+<rect x="103" y="24" width="8" height="16" fill="white"/>
+<rect x="111" y="32" width="8" height="8" fill="white"/>
+<rect x="127" y="87" width="16" height="40" transform="rotate(90 127 87)" fill="white"/>
+<rect x="103" y="103" width="24" height="16" transform="rotate(90 103 103)" fill="white"/>
+<rect x="119" y="103" width="8" height="16" transform="rotate(90 119 103)" fill="white"/>
+<rect x="111" y="111" width="8" height="8" transform="rotate(90 111 111)" fill="white"/>
+<rect x="56" y="127" width="16" height="40" transform="rotate(180 56 127)" fill="white"/>
+<rect x="40" y="103" width="24" height="16" transform="rotate(180 40 103)" fill="white"/>
+<rect x="40" y="119" width="8" height="16" transform="rotate(180 40 119)" fill="white"/>
+<rect x="32" y="111" width="8" height="8" transform="rotate(180 32 111)" fill="white"/>
+<rect x="16" y="56" width="16" height="40" transform="rotate(-90 16 56)" fill="white"/>
+<rect x="40" y="40" width="24" height="16" transform="rotate(-90 40 40)" fill="white"/>
+<rect x="24" y="40" width="8" height="16" transform="rotate(-90 24 40)" fill="white"/>
+<rect x="32" y="32" width="8" height="8" transform="rotate(-90 32 32)" fill="white"/>
+<path d="M79.375 89.875L61 71.5L79.375 53.125" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

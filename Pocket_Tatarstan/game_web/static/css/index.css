@@ -1,0 +1,29 @@
+@font-face {
+    font-family: undertale;
+    src: url(../asset/fonts/undertale_battle_font.ttf);
+}
+
+html {
+    size: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../asset/background.svg);
+    background-size: cover;
+    background-position-y: -6vw;
+    background-repeat: no-repeat;
+}
+
+.curent_page {
+    display: flex;
+}

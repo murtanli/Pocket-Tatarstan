@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/game_menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/level_select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav_bar">
+        <div class="nav_btn main" id="toInfo">
+            <a href="#">
+                <img src="{% static 'asset/nav_icons/main_btn.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="nav_btn raiting">
+            <a href="#">
+                <img src="{% static 'asset/nav_icons/raiting_btn.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="nav_btn news">
+            <a href="#">
+                <img src="{% static 'asset/nav_icons/news_btn.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="nav_btn play">
+            <a href="#" class="navPlay" id="toPlay">
+                <img src="{% static 'asset/nav_icons/play_btn.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="nav_btn profile">
+            <a href="#">
+                <img src="{% static 'asset/nav_icons/profile_btn.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="nav_btn contacts">
+            <a href="#">
+                <img src="{% static 'asset/nav_icons/contacts_btn.svg' %}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="play_page curent_page">
+            <img src="{% static 'asset/PT_logo.png' %}" alt="logo" draggable="false" class="game_logo">
+            <div class="play_buttons">
+                <a href="#">
+                    <img src="{% static 'asset/continue_btn.svg' %}" alt="" draggable="false" class="continue_btn">
+                </a>
+                <a href="#" id="toLevels">
+                    <img src="{% static 'asset/level-btn.svg' %}" alt="" draggable="false" class="level_btn_gm">
+                </a>
+            </div>
+        </div>
+        <div class="levels">
+            <div class="slider_track">
+                 <div class="level_list">
+                <p class="label_levels">Казань</p>
+                <div class="level_grid">
+                    {% for level in levels %}
+                        <div class="level">
+                            <a href="{% url 'level_detail' level.id %}" class="level_btn">
+                                <p class="level_btn_label">{{ level.name }}</p>
+                                <img src="{% static 'asset/level_kazan_one.svg' %}" alt="">
+                            </a>
+                            <div class="progress_bar">
+                                aaa
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <div class="level_list">
+                <p class="label_levels">Набережные челны</p>
+                <div class="level_grid">
+                    <div class="level">
+                        Делаем....
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="mini_nav_bar">
+                <a href="#" class="prev">
+                    <img src="{% static 'asset/mini_nav_bar/button-prev.svg' %}" alt="prev" class="prev_btn" draggable="false">
+                </a>
+                <a href="#" class="next">
+                    <img src="{% static 'asset/mini_nav_bar/button-next.svg' %}" alt="next" class="next_btn" draggable="false">
+                </a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="slider_track">
+                <div class="level_list">
+                    <p class="first_block">  Это пиксельная 2D-головоломка, созданная для знакомства с 
+                        культурой и историей Республики Татарстан. 
+                        <br>
+                        <span class="space">Игра</span> объединяет элементы развлечения и образования, позволяя в лёгкой форме прикоснуться 
+                        к богатому наследию региона.
+                    </p>
+                </div>
+                <div class="level_list">
+                    <!--Я тут еще блоков текста перед презой добавлю, они прост шаблонные в целом
+                    И заодно текст покрашу-->
+                </div>
+
+            </div>
+            <div class="mini_nav_bar">
+                <a href="#" class="prev">
+                    <img src="{% static 'asset/mini_nav_bar/button-prev.svg' %}" alt="prev" class="prev_btn" draggable="false">
+                </a>
+                <a href="#" class="next">
+                    <img src="{% static 'asset/mini_nav_bar/button-next.svg' %}" alt="next" class="next_btn" draggable="false">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/nextPage.js' %}"></script>
+</body>
+</html>

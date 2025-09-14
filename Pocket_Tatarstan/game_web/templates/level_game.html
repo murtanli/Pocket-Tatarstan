@@ -1,19 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{ level.name }}</title>
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
 </head>
-<link rel="stylesheet" href="{% static 'game.css'%}">
 <body>
+    
     <h1>{{ level.name }}</h1>
-
     <p>Сложность: {{ level.star_pr }}</p>
 
-    {% if level.level_image %}
-        <img class="image_game" src="{{ level.level_image.url }}" alt="{{ level.name }}">
-    {% else %}
-        <p>Нет изображения уровня</p>
-    {% endif %}
+    <div class="play_space" id="play_space">
+        {% if level.level_image %}
+            <img class="image_game" src="{{ level.level_image.url }}" alt="{{ level.name }}" draggable="false">
+        {% else %}
+            <p>Произошла ошибка загрузки уровня, перезагрузите страницу</p>
+        {% endif %}
+    </div>
+
+    <div id="blocks_menu"></div>
+
+    <script type="module" src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

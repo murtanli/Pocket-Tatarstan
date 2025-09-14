@@ -1,0 +1,76 @@
+.nav_bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 10vw;
+    background-image: url(../asset/nav_bar_back.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3.7vw;
+    height: 15%;
+    width: 5vw;
+    background-color: #ffffff;
+    border-right: 7px solid #000000;
+    transition: 300ms ease-in-out;
+}
+.nav_btn:hover {
+    width: 10vw;
+    border-right: 7px solid #000000;
+}
+/*.nav_btn.main:hover {
+    width: 10vw;
+    background-color: #091DFF;
+    border-right: 7px solid #000000;
+}
+.nav_btn.raiting:hover {
+    width: 10vw;
+    background-color: #0DFF00;
+    border-right: 7px solid #000000;
+}
+.nav_btn.news:hover {
+    width: 10vw;
+    background-color: #B700FF;
+    border-right: 7px solid #000000;
+}
+.nav_btn.play:hover {
+    width: 10vw;
+    background-color: #FF7B00;
+    border-right: 7px solid #000000;
+}
+.nav_btn.profile:hover {
+    width: 10vw;
+    background-color: #FF0000;
+    border-right: 7px solid #000000;
+}
+.nav_btn.contacts:hover {
+    width: 10vw;
+    background-color: #FF7B00;
+    border-right: 7px solid #000000;
+}*/
+
+
+
+.nav_btn>a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 10vh;
+    padding: 0;
+}
+.nav_btn>a>img {
+    position: relative;
+    width: 3vw;
+    height:6vh;
+}

@@ -1,0 +1,23 @@
+.info {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80vw;
+    height: 70vh;
+    font-family: undertale;
+
+    position: relative;   /* чтобы кнопки могли позиционироваться внутри */
+    overflow: hidden;     /* скрываем соседние блоки */
+}
+p {
+    position: relative;
+    font-family: undertale;
+    font-size: 5vh;
+}
+
+.first_block {
+    width: 50vw;
+    height: 50vh;
+    margin: 10vh 0 0 1.7vw;
+}
